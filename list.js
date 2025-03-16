@@ -33,9 +33,19 @@ document.getElementById("add-item-button").addEventListener("click", () => {
     let inputBox = document.getElementById("new-item");
     let newItem = inputBox.value;
     let newLi = document.createElement("li");
+    newLi.addEventListener("click", () => {
+        newLi = remove();
+    })
     newLi.innerText = newItem;
     document.getElementById("grocery-list").appendChild(newLi);
 })
 
 // we want to remove any item when it is clicked
+let listItems = document.getElementsByTagName("li");
+for (let i = 0;  i<listItems.length; i++){
+    let item = listItems[i];
+    listItems[i].addEventListener("click", () => {
+        listItems[i].remove();
+    })
+}
 
