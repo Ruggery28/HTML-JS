@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div>
         <h1 id="header" class="green">List</h1>
         <h2>Buy groceries</h2>
-        <ul>
+        <ul id="grocery-list">
             <li id="one" class="hot first"><em>fresh</em> figs</li>
             <li id="two" class="hot">pine nuts</li>
             <li id="three" class="hot">honey</li>
             <li id="four">balsamic vinegar</li>
+        </ul>
+            <input type="text" name="new-item" id="new-item">
+            <button id="add-item-button">Add Item</button>
+
+            <!-- Add stuff to the list: 
+                - text box
+                - submit button
+                - event listener on the button
+                - got the value
+                - create a new li
+                - assign the value to the li
+                - need to locate the ul
+                - add the li to the ul
+            -->
+
             <button id="counter-button">+1</button>
             <p id="counter-text">0</p>
         </ul>
         <script src="list.js"></script>
     </div>
 </body>
+
 </html>
